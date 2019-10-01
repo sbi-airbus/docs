@@ -53,6 +53,14 @@
       processing :term:`block`. The workflow is also automatically
       instantiated (run) to provide a first :term:`job` output.
 
+   EVI
+      **E**\ nhanced **V**\ egetation **I**\ ndex complements
+      :term:`NDVI` in the sense that it looks for indicators of
+      vegetation health to which NVDI is less sentitive to.
+      Read `here
+      <https://en.wikipedia.org/wiki/Enhanced_vegetation_index>`_ more
+      about it.
+
    full scene
       Data block output that includes the complete area covered by
       the satellite instrument when it it was over that area. In this
@@ -72,11 +80,10 @@
    NDVI
       **N**\ ormalized **D**\ ifference **V**\ egetation **I**\
       ndex. One of the most widespread vegetation indexes used to
-      infer vegetation health and vitality.
-
-   EVI
-      **E**\ nhanced **V**\ egetation **I**\ ndex.
-
+      infer vegetation health and vitality. See the Wikipedia `entry
+      <https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index>`_
+      about it.
+      
    processing block
       A :term:`block` that takes input from a :term:`data block` and applies a processing operation to the data.
 
@@ -87,6 +94,17 @@
    quicklooks
       A low resolution RGB bitmap image for previewing a given output.
 
+   scene
+      A scene is an image captured by an earth observation
+      satellite over a specific area and recorded by a particular
+      instrument onboard that satellite. The instrument can be
+      optical, in which case the output is a digital image in a given
+      light band, e.g., RGB, panchromatic, Short Wave Infrared, Near
+      Infrared, etc. It can also be a radiometric instrument, i.e.,
+      Synthetic Aperture Radar, microwave radiometer, spectrometer,
+      etc. Depending on the type of instrument the output product
+      might be or not a digital image.
+      
    task
       A block in the context of a job, e.g., the :ref:`Pleiades data
       block <pleiades-aoiclipped-block>` is a task in a :term:`job`
