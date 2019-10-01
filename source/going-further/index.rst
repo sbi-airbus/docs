@@ -10,7 +10,7 @@ Going further with UP42
 If you are already familiar with the topics discussed in the :ref:`introductory
 <getting-started>` materials then is time to go further and explore
 the :ref:`core concepts <core-concepts>` and understand what
-:ref:`data filters <filters>` are available and how they work.
+:ref:`data filters <filter-tutorial>` are available and how they work.
 
 The :ref:`download blocks <download-blocks-tutorial-spot-pleiades>`
 how-to explains the procedure for downloading very-high resolution
@@ -31,7 +31,7 @@ requires :ref:`custom storage <custom-storage>`?
    :includehidden:
 
    core-concepts
-   filters
+   filter-tutorial
    api-walkthrough
    download-blocks-tutorial-spot-pleiades
    custom-processing-block-dev

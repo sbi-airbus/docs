@@ -22,6 +22,7 @@ self-explanatory.
    :caption: Contents
    :includehidden:             
 
+   filters   
    block-manifest
    block-envvars
    capabilities
