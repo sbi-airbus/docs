@@ -36,16 +36,6 @@ data block implementation that determines if a block supports a
 a certain filter or not [1]_.
 from a certain data
 
-.. _limit-filter:
-
-``limit``
-~~~~~~~~~
-   The maximum number of results to be returned. Default is 1. The
-   maximum is 5 by default, if you have a payment method associated
-   with your account you will be able to set it up to 10 in the
-   project settings page. For higher values please get in touch with
-   `support@up42.com <mailto:support%20@up42.com>`__.
-
 .. _bbox-filter:
 
 ``bbox``
@@ -53,39 +43,12 @@ from a certain data
     Searches items according to a specified :term:`AOI` as a
     GeoJSON :term:`bounding box` shaped geometry that intersect this AOI.
 
-.. _intersects-filter:
-
-``intersects``
-~~~~~~~~~~~~~~
-    Searches items according to a specified :term:`AOI` as a
-    GeoJSON polygon-ally shaped geometry that intersect this AOI.
-
 .. _contains-filter:
 
 ``contains``
 ~~~~~~~~~~~~
     Searches items according to a specified :term:`AOI` as a GeoJSON geometry
     that fully contain (cover) this AOI.
-
-.. _time-filter:
-
-``time``
-~~~~~~~~
-   Searches items acccording to a single date and time or range --
-   dates separated by ``/`` -- formatted according to `RFC 3339
-   section 5.6 <https://tools.ietf.org/html/rfc3339#sec on-5.6>`__.
-
-.. _time_series-filter:
-
-``time_series``
-~~~~~~~~~~~~~~~
-    Searches items according to an array of
-    :ref:`time ranges <time-filter>`
-    each specifying the desired date ranges.
-    It returns the the specified :ref:`limit <limit-filter>` for each
-    given time range. If the ranges overlap then there will be
-    repeated items. How many depends on the specific overlap of the
-    given time ranges.
 
 .. _ids-filter:
 
@@ -136,6 +99,44 @@ from a certain data
    This filter allows for **deterministic** querying of the data set,
    i.e., you are guaranteed to always get a precise piece of data
    using the ids filter.
+
+.. _intersects-filter:
+
+``intersects``
+~~~~~~~~~~~~~~
+    Searches items according to a specified :term:`AOI` as a
+    GeoJSON polygon-ally shaped geometry that intersect this AOI.
+   
+.. _limit-filter:
+
+``limit``
+~~~~~~~~~
+   The maximum number of results to be returned. Default is 1. The
+   maximum is 5 by default, if you have a payment method associated
+   with your account you will be able to set it up to 10 in the
+   project settings page. For higher values please get in touch with
+   `support@up42.com <mailto:support%20@up42.com>`__.
+
+.. _time-filter:
+
+``time``
+~~~~~~~~
+   Searches items acccording to a single date and time or range --
+   dates separated by ``/`` -- formatted according to `RFC 3339
+   section 5.6 <https://tools.ietf.org/html/rfc3339#sec on-5.6>`__.
+
+.. _time_series-filter:
+
+``time_series``
+~~~~~~~~~~~~~~~
+    Searches items according to an array of
+    :ref:`time ranges <time-filter>`
+    each specifying the desired date ranges.
+    It returns the the specified :ref:`limit <limit-filter>` for each
+    given time range. If the ranges overlap then there will be
+    repeated items. How many depends on the specific overlap of the
+    given time ranges.
+
 
 Implemented filters
 -------------------
