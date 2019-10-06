@@ -89,7 +89,7 @@ should display something like:
 
 .. code:: bash
 
-   Job <job ID> s RUNNING.
+   Job <job ID> is RUNNING.
 
 where ``<job ID>`` is the job ID of the job you just created. Here is
 an example:

@@ -59,6 +59,8 @@ Full scene block example
 
 For this example we are using the following job parameters:
 
+.. _aoi-filter-tutorial:
+
 .. gist:: https://gist.github.com/up42-epicycles/357d5fc94627c60cb152749582a172cc
 
 And here are the two returned images in VV and VH polarization.
@@ -120,6 +122,16 @@ covers the API in this case due to the large dimension of the AOI.
 AOI clipped block example
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+The other type of blocks we have are AOI clipped. This means that that
+the returned image will be composed of `tiles
+<https://en.wikipedia.org/wiki/Web_Map_Tile_Service>`_, or a single
+image in the case of the :term:`download block`, that **intersect**
+the given AOI.
 
+Let us consider the same AOI given :ref:`above
+<aoi-filters-tutorial>`. We are going to use the very-high resolution
+data from Pléiades, with both the :ref:`download
+<pleiades-download-block>` and :ref:`streaming
+<pleiades-aoiclipped-block>` blocks.
 
 
