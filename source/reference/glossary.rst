@@ -44,8 +44,8 @@
       that customer.
 
    data block
-      A :term:`block` that provides satellite image data or other geospatial data.
-
+      A :term:`block` that provides satellite image data or other geospatial data.    
+      
    demo project
       Project that is created when a customer confirms the
       email address associated with his/her account. This project
@@ -53,6 +53,10 @@
       processing :term:`block`. The workflow is also automatically
       instantiated (run) to provide a first :term:`job` output.
 
+   download block
+      A term:`data block` that allows for downloading an image
+      granting indefinite rights to its usage. 
+      
    EVI
       **E**\ nhanced **V**\ egetation **I**\ ndex complements
       :term:`NDVI` in the sense that it looks for indicators of
