@@ -134,4 +134,26 @@ data from Pléiades, with both the :ref:`download
 <pleiades-download-block>` and :ref:`streaming
 <pleiades-aoiclipped-block>` blocks.
 
+Filtering by time/date
+----------------------
 
+Filtering by date range
++++++++++++++++++++++++
+
+
+Filtering by time series
+++++++++++++++++++++++++
+
+Filtering by IDs
+----------------
+
+Filtering by product ID
++++++++++++++++++++++++
+
+
+Filtering by scene ID
++++++++++++++++++++++
+
+
+Filtering by limit
+------------------
