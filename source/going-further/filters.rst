@@ -167,6 +167,8 @@ Implemented filters
  ":ref:`Pleiades Download <pleiades-download-block>`", **✓**, **✓**, **✓**, **✓**, **✓**, **✓**, **✓**, **✓**
  ":ref:`SPOT (AOI-Clipped) <pleiades-aoiclipped-block>`", **✓**, **✓**, **✓**, **✓**, **✓**, **✓**, **✓**, **✓**
  ":ref:`SPOT Download <pleiades-download-block>`", **✓**, **✓**, **✓**, **✓**, **✓**, **✓**, **✓**, **✓**
+ ":ref:`Hexagon 15cm Aerial <hexagon-aerial-15cm-block>`", , **✓**, **✓**, , , , ,
+ ":ref:`Hexagon 30cm Aerial <hexagon-aerial-30cm-block>`", , **✓**, **✓**, , , , ,
  ":ref:`Sentinel-1 GRD (full-scene) <sentinel1-grd-fullscene-block>`", **✓**, **✓**, **✓**, **✓**, **✓**, **✓**, **✓**,
  ":ref:`Sentinel-1 SLC (full-scene) <sentinel1-slc-fullscene-block>`", **✓**, **✓**, **✓**, **✓**, **✓**, **✓**, **✓**,
  ":ref:`Sentinel-2 L1C (full-scene)  <sentinel2-l1c-fullscene-block>`", **✓**, **✓**, **✓**, **✓**, **✓**, **✓**, **✓**, **✓**
