@@ -19,6 +19,8 @@ built by UP42.
    pleiades-download
    spot
    spot-download
+   hexagon-aerial-15cm
+   hexagon-aerial-30cm
    sobloo-s1-grd
    sobloo-s1-grd-aoiclipped
    sobloo-s1-slc
