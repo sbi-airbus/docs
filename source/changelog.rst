@@ -7,6 +7,11 @@
 Changelog
 =========
 
+27.01.2020
+----------
+
+* Add Hexagon Aerial Imagery blocks (:ref:`Hexagon 15cm Aerial Imagery AOI clipped  <hexagon-aerial-15cm-block>`, :ref:`Hexagon 30cm Aerial Imagery AOI clipped <hexagon-aerial-30cm-block>`).
+
 22.01.2020
 ----------
 * :ref:`Sentinel-2 Super-resolution <s2-superresolution-block>` block now supports clipping option.
