@@ -27,3 +27,4 @@ blocks built by UP42.
    zonal-statistics
    sharpening
    s5p_lvl3
+   ship-identification
