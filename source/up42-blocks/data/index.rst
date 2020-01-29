@@ -29,3 +29,4 @@ built by UP42.
    sobloo-s5p
    sentinelhub-landsat8
    modis
+   ais-hvp
