@@ -60,6 +60,10 @@
       processing :term:`block`. The workflow is also automatically
       instantiated (run) to provide a first :term:`job` output.
 
+   download block
+      A term:`data block` that allows for downloading an image
+      granting indefinite rights to its usage.
+
    full scene
       Data block output that includes the complete area covered by
       the satellite instrument when it it was over that area. In this
