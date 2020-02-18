@@ -48,7 +48,10 @@
       is a coordinate-based local, regional or global system used to locate geographical entities.
 
    cloud cover
-      Percentage or ratio of the given individual scene or region that is fully covered by clouds as defined by a cloud mask. Different cloud masks will returned different results depending on considerations on haze and cloud type.
+      Percentage or ratio of the given individual scene or region that
+      is fully covered by clouds as defined by a cloud mask. Different
+      cloud masks will returned different results depending on
+      considerations on haze and cloud type.
 
    data block
       A :term:`block` that provides satellite image data or other geospatial data.
@@ -63,6 +66,21 @@
    download block
       A term:`data block` that allows for downloading an image
       granting indefinite rights to its usage.
+
+   EVI
+      **E**\ nhanced **V**\ egetation **I**\ ndex.
+
+   EPSG
+      **E**\ uropean **P**\ etroleum **S**\ urvey **G**\ roup **G**\
+       eodetic Parameter Dataset (also EPSG registry) is a public
+       registry of spatial reference systems, Earth ellipsoids,
+       coordinate transformations and related units of measurement
+       mantained by the International Association of Oil & Gas
+       Producers (IOGP), formerly known as the European Petroleum
+       Survey Group (EPSG). Each entity is assigned an EPSG code
+       between 1024-32767 along with a standard machine-readable
+       well-known text (WKT) representation. See more in `here
+       <https://www.epsg-registry.org/>`_.
 
    full scene
       Data block output that includes the complete area covered by
@@ -85,12 +103,6 @@
       ndex. One of the most widespread vegetation indexes used to
       infer vegetation health and vitality.
 
-   EVI
-      **E**\ nhanced **V**\ egetation **I**\ ndex.
-
-   EPSG
-    **E**\ uropean **P**\ etroleum **S**\ urvey **G**\ roup **G**\ eodetic Parameter Dataset (also EPSG registry) is a public registry of spatial reference systems, Earth ellipsoids, coordinate transformations and related units of measurement mantained by the International Association of Oil & Gas Producers (IOGP), formerly known as the European Petroleum Survey Group (EPSG). Each entity is assigned an EPSG code between 1024-32767 along with a standard machine-readable well-known text (WKT) representation. See more in `here <https://www.epsg-registry.org/>`_.
-
    nodata mask
       A raster image or band indicating areas of nodata values, e.g. due to partial scenes with a satellite grid, a cloud mask etc.
 
@@ -107,6 +119,17 @@
 
    quicklooks
       A low resolution RGB bitmap image for previewing a given output.
+
+   scene
+      A scene is an image captured by an earth observation
+      satellite over a specific area and recorded by a particular
+      instrument onboard that satellite. The instrument can be
+      optical, in which case the output is a digital image in a given
+      light band, e.g., RGB, panchromatic, Short Wave Infrared, Near
+      Infrared, etc. It can also be a radiometric instrument, i.e.,
+      Synthetic Aperture Radar, microwave radiometer, spectrometer,
+      etc. Depending on the type of instrument the output product
+      might be or not a digital image.
 
    task
       A block in the context of a job, e.g., the :ref:`Pleiades data
