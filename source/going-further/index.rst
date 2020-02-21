@@ -31,6 +31,7 @@ requires :ref:`custom storage <custom-storage>`?
    :includehidden:
 
    core-concepts
+   filter-tutorial
    filters
    api-walkthrough
    using-download-block

@@ -26,7 +26,7 @@ returned.
 Filtering by geometry
 ---------------------
 
-Generally you have a very concrete idea of the area of Earth that
+Generally you have a very concrete idea of the area of the Earth that
 interests you for the particular application you have in mind. To
 select for a piece of data relative to that area you specify an
 :term:`AOI`.
@@ -51,7 +51,7 @@ be using the same AOI.
    :align: center
    :alt: Original AOI located in Northern Italy
 
-Original AOI to be used in all examples
+Original AOI to be used in the examples below
 
 Full scene block example
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -107,16 +107,29 @@ area of 2342.5 km².
 
 Large AOI with 2342.5 km² area in northern Canada
 
-.. figure:: _assets/filters-s1-l1c-grd-hh-arctic-canada.png
+.. figure:: _assets/filters-tutorial-s1-l1c-grd-hv-arctic-canada.png
    :align: center
    :alt: Sentinel 1 L1C GRD HH polarized scene for northern Canada
 
 Sentinel 1 scene for HH polarization intersecting the large AOI in
 northern Canada
 
-You can see that the AOI, represented in the gray rectangle under the
-satellite image, you can see the gray, hence the image does not fully
-covers the API in this case due to the large dimension of the AOI.
+You can see that the AOI, represented in the red outlined rectangle
+overlaying the  satellite image.
+
+.. warning::
+   Please be aware that even for a :term:`full scene` it
+   might happen that the AOI is bigger than the available image. This
+   is certainly a strange situation but, nevertheless, we mention it
+   for completeness sake.
+
+.. figure:: _assets/filters-tutorial-s2-l1c-arctic-canada.png
+   :align: center
+   :alt: Sentinel 2 L1C scene for northern Canada
+
+Sentinel 2 scene not being able to cover completely the intersected
+AOI in northern Canada. This is a pseudo-color composite of the RGB
+and Near InfraRed (NIR) band
 
 AOI clipped block example
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -127,32 +140,59 @@ the returned image will be composed of `tiles
 image in the case of the :term:`download block`, that **intersect**
 the given AOI.
 
-Let us consider the same AOI given :ref:`above
-<aoi-filters-tutorial>`. We are going to use the very-high resolution
-data from Pléiades, with both the :ref:`download
-<pleiades-download-block>` and :ref:`streaming
-<pleiades-aoiclipped-block>` blocks.
+.. figure:: _assets/filters-tutorial-pleaides-streaming-intersect-northern-italy.png
+   :align: center
+   :alt: Pléiades streaming block output intersecting the AOI
 
-Filtering by time/date
-----------------------
-
-Filtering by date range
-+++++++++++++++++++++++
+The retrieved imagery for Pléaides **intersects** the AOI located in
+Northern Italy
 
 
-Filtering by time series
-++++++++++++++++++++++++
+.. figure:: _assets/filters-tutorial-pleaides-streaming-contains-northern-italy.png
+   :align: center
+   :alt: Pléiades streaming block output that contains the AOI
 
-Filtering by IDs
-----------------
-
-Filtering by product ID
-+++++++++++++++++++++++
+The retrieved imagery for Pléaides fully **contains** the AOI located in
+Northern Italy
 
 
-Filtering by scene ID
-+++++++++++++++++++++
+.. Let us consider the same AOI given :ref:`above
+..   <aoi-filters-tutorial>`. We are going to use the very-high resolution
+.. data from Pléiades, with both the :ref:`download
+.. <pleiades-download-block>` and :ref:`streaming
+.. <pleiades-aoiclipped-block>` blocks.
 
 
-Filtering by limit
-------------------
+
+
+
+..
+   Filtering by time/date
+   ----------------------
+
+   Filtering by date range
+   +++++++++++++++++++++++
+
+
+
+
+
+   Filtering by time series
+   ++++++++++++++++++++++++
+
+   Filtering by IDs
+   ----------------
+
+   Filtering by product ID
+   +++++++++++++++++++++++
+
+
+   Filtering by scene ID
+   +++++++++++++++++++++
+
+
+   Filtering by limit
+   ------------------
+
+   Filtering by cloud cover
+   ------------------------

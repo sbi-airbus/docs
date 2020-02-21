@@ -1,15 +1,20 @@
 .. meta::
    :description: UP42 Getting started: Running your first job via the API
-   :keywords: api, job run, howto, tutorial, demo project 
+   :keywords: api, job run, howto, tutorial, demo project
 
 .. _first-api-request:
-              
+
 =================
  Use the UP42 API
 =================
 
 This section helps you to get started with the UP42 API. We will run the :term:`demo project`
 once more, but this time via the command line.
+
+.. tip::
+   Maybe you prefer to have an overview of the overall UP42 API
+   instead of a simple tutorial. In that case please consult the `API reference <api-specification>`.
+
 
 .. _api_requirements:
 
@@ -91,7 +96,7 @@ The created jobs are displayed in the UP42 console in the :ref:`job overview <jo
 If you try to launch a second job while a job is already running, you will receive an error message:
 
 .. code:: javascript
-   
+
    {
      "error": {
        "code": "TOO_MANY_REQUESTS",
@@ -99,7 +104,8 @@ If you try to launch a second job while a job is already running, you will recei
        "details": null
      },
      "data": null
-   }    
+   }
 
-     
-To further explore the API please go to the :ref:`API walktrough <api-walkthrough>`.
+
+To further explore the API please go to the :ref:`API walktrough
+<api-walkthrough>` or the `API reference <api-specification>`.
