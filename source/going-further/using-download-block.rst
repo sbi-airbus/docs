@@ -15,7 +15,7 @@ Making use of the additional multispectral bands (other than red, green and blue
 to do detailed vegetation analysis (calculating :term:`NDVI` for instance) or any workflow that
 relies on the full multispectral instruments' capabilities.
 
-.. figure:: _assets/ndvi-spot-example.png
+.. figure:: _assets/ndvi-spot-example-opt.png
   :align: center
   :alt: NDVI map generated from SPOT imagery in Berlin
 

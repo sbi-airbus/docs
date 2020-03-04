@@ -24,7 +24,7 @@ the :ref:`limit <limit-filter>`. By default a single data asset is
 returned.
 
 Filtering by geometry
----------------------
+=====================
 
 Generally you have a very concrete idea of the area of the Earth that
 interests you for the particular application you have in mind. To
@@ -41,20 +41,20 @@ Three type of situations might happen given an AOI:
  2. You want to have data that fully **contains** the AOI.
 
 Get the data that intersects the AOI
-++++++++++++++++++++++++++++++++++++
+------------------------------------
 
 To explain the ``intersects`` geometry filter we are going to use both
 full scene and AOI clipped blocks. For simplicity sake we are going to
 be using the same AOI.
 
-.. figure:: _assets/filters-original-aoi.png
+.. figure:: _assets/filters-original-aoi-opt.png
    :align: center
    :alt: Original AOI located in Northern Italy
 
 Original AOI to be used in the examples below
 
 Full scene block example
-^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 For this example we are using the following job parameters:
 
@@ -64,13 +64,13 @@ For this example we are using the following job parameters:
 
 And here are the two returned images in VV and VH polarization.
 
-.. figure:: _assets/filters-s1-l1c-grd-vh.png
+.. figure:: _assets/filters-s1-l1c-grd-vh-opt.png
    :align: center
    :alt: Sentinel 1 L1C GRD VH polarized scene in northern Italy
 
 Sentinel 1 scene returned for VH polarization
 
-.. figure:: _assets/filters-s1-l1c-grd-vv.png
+.. figure:: _assets/filters-s1-l1c-grd-vv-opt.png
    :align: center
    :alt: Sentinel 1 L1C GRD VV polarized scene in northern Italy
 
@@ -79,7 +79,7 @@ Sentinel 1 scene returned for VV polarization
 The AOI is barely visible in the images above. If you zoom in you can
 see it clearly as a grey rectangle superimposed on the image.
 
-.. figure:: _assets/filters-s1-l1c-grd-aoi-detail.png
+.. figure:: _assets/filters-s1-l1c-grd-aoi-detail-opt.png
    :align: center
    :alt: AOI detail in full scene for Sentinel 1 L1C GRD VH polarization
 
@@ -101,13 +101,13 @@ area of 2342.5 km².
    method to your account the maximum allowed AOI area is currently
    set to be 1000 km². Without a payment method is 100 km².
 
-.. figure:: _assets/filters-large-aoi-arctic.png
+.. figure:: _assets/filters-large-aoi-arctic-opt.png
    :align: center
    :alt: Large AOI for northern Canada
 
 Large AOI with 2342.5 km² area in northern Canada
 
-.. figure:: _assets/filters-tutorial-s1-l1c-grd-hv-arctic-canada.png
+.. figure:: _assets/filters-tutorial-s1-l1c-grd-hv-arctic-canada-opt.png
    :align: center
    :alt: Sentinel 1 L1C GRD HH polarized scene for northern Canada
 
@@ -123,7 +123,7 @@ overlaying the  satellite image.
    is certainly a strange situation but, nevertheless, we mention it
    for completeness sake.
 
-.. figure:: _assets/filters-tutorial-s2-l1c-arctic-canada.png
+.. figure:: _assets/filters-tutorial-s2-l1c-arctic-canada-opt.png
    :align: center
    :alt: Sentinel 2 L1C scene for northern Canada
 
@@ -132,7 +132,7 @@ AOI in northern Canada. This is a pseudo-color composite of the RGB
 and Near InfraRed (NIR) band
 
 AOI clipped block example
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The other type of blocks we have are AOI clipped. This means that that
 the returned image will be composed of `tiles
@@ -140,7 +140,7 @@ the returned image will be composed of `tiles
 image in the case of the :term:`download block`, that **intersect**
 the given AOI.
 
-.. figure:: _assets/filters-tutorial-pleaides-streaming-intersect-northern-italy.png
+.. figure:: _assets/filters-tutorial-pleaides-streaming-intersect-northern-italy-opt.png
    :align: center
    :alt: Pléiades streaming block output intersecting the AOI
 
@@ -148,7 +148,11 @@ The retrieved imagery for Pléaides **intersects** the AOI located in
 Northern Italy
 
 
-.. figure:: _assets/filters-tutorial-pleaides-streaming-contains-northern-italy.png
+
+
+
+
+.. figure:: _assets/filters-tutorial-pleaides-streaming-contains-northern-italy-opt.png
    :align: center
    :alt: Pléiades streaming block output that contains the AOI
 
@@ -173,26 +177,22 @@ Northern Italy
    Filtering by date range
    +++++++++++++++++++++++
 
-
-
-
-
    Filtering by time series
    ++++++++++++++++++++++++
 
    Filtering by IDs
    ----------------
 
-   Filtering by product ID
-   +++++++++++++++++++++++
-
-
    Filtering by scene ID
    +++++++++++++++++++++
-
 
    Filtering by limit
    ------------------
 
    Filtering by cloud cover
    ------------------------
+
+   Filtering by order ID
+   ---------------------
+
+   order_id 0ba13ce3-e67f-4186-8163-4616f059238f
